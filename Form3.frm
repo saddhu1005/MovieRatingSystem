@@ -178,7 +178,6 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-
 Private Sub Command1_Click()
     Dim username, password, db_path, sql As String
     username = Text1.Text
@@ -196,7 +195,7 @@ Private Sub Command1_Click()
             rs.Open sql, cn, adOpenStatic, adLockOptimistic
         If (rs.Fields("PASSWORD").Value = password And rs.Fields("IS ADMIN").Value = 1) Then
             Unload Me
-            MsgBox ("Admin Login Successfull!!")
+            Form8.Show
         Else
             Text2.Text = ""
             If (rs.Fields("IS ADMIN").Value = 1) Then

@@ -95,6 +95,15 @@ Begin VB.Form Form6
       End
       Begin VB.TextBox Text1 
          Appearance      =   0  'Flat
+         BeginProperty Font 
+            Name            =   "Arial"
+            Size            =   11.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
          Height          =   885
          Left            =   600
          TabIndex        =   3

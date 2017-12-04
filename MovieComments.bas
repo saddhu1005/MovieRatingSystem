@@ -111,7 +111,7 @@ Public Sub CollectComments(movie_name As String)
             Form6.Label12.FontUnderline = True
             Form6.Label13.Caption = Comment_array(1, 2)
         Else
-            search_index = 0
+            comment_index = 0
             Form6.Label8.Visible = True
             Form6.Label9.Visible = True
             Form6.Label10.Visible = True
