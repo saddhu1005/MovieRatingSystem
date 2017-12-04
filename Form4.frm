@@ -4,7 +4,7 @@ Begin VB.Form Form4
    Caption         =   "Movie Rating System"
    ClientHeight    =   10215
    ClientLeft      =   3090
-   ClientTop       =   1635
+   ClientTop       =   1335
    ClientWidth     =   17580
    LinkTopic       =   "Form4"
    LockControls    =   -1  'True
@@ -810,19 +810,6 @@ Begin VB.Form Form4
          TabIndex        =   1
          Top             =   390
          Width           =   1965
-      End
-   End
-   Begin VB.Menu File 
-      Caption         =   "File"
-   End
-   Begin VB.Menu SortMovies 
-      Caption         =   "Sort Movies"
-      Begin VB.Menu CurrentlyRunning 
-         Caption         =   "Currently Running"
-         Checked         =   -1  'True
-      End
-      Begin VB.Menu Ratings 
-         Caption         =   "Ratings"
       End
    End
 End
