@@ -218,13 +218,18 @@ Public Sub UpdatemovieStatus(movie_name As String)
     Else
         current = 0
     End If
-    Dim cn As ADODB.Connection
-    Dim db_path, query As String
-    db_path = App.Path + "\db\MovieRatingSystem.mdb"
-    Set cn = New ADODB.Connection
-        cn.Open "PROVIDER=Microsoft.Jet.OLEDB.4.0; Data Source=" & db_path
-    query = "Update MovieDetails Set CURRENT=" & Val(current) & " where NAME=['" & movie_name & "'];"
-    cn.Execute (query)
+     Dim db As Database
+        Dim query As String
+        Set db = OpenDatabase(App.Path + "/db/MovieRatingSystem.mdb")
+   ' Dim cn As ADODB.Connection
+   ' Dim db_path, query As String
+  '  db_path = App.Path + "\db\MovieRatingSystem.mdb"
+  '  Set cn = New ADODB.Connection
+   '     cn.Open "PROVIDER=Microsoft.Jet.OLEDB.4.0; Data Source=" & db_path
+    query = " Update MovieDetails Set CURRENT=" & Val(current) & " where NAME='" & movie_name & "';"
+   ' cn.Execute (query)
+   db.Execute (query)
+   db.Close
     MsgBox ("Status Updated SuccessFully!")
 End Sub
 

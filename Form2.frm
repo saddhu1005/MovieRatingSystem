@@ -4,8 +4,8 @@ Begin VB.Form Form2
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Register"
    ClientHeight    =   6795
-   ClientLeft      =   7095
-   ClientTop       =   2865
+   ClientLeft      =   4575
+   ClientTop       =   1830
    ClientWidth     =   10695
    FillColor       =   &H00FFFFFF&
    FillStyle       =   4  'Upward Diagonal

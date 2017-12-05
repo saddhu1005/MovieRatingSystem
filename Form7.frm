@@ -7,7 +7,7 @@ Begin VB.Form Form7
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Add Movie"
    ClientHeight    =   10305
-   ClientLeft      =   45
+   ClientLeft      =   3855
    ClientTop       =   390
    ClientWidth     =   12765
    LinkTopic       =   "Form7"
@@ -16,7 +16,6 @@ Begin VB.Form Form7
    MinButton       =   0   'False
    ScaleHeight     =   10305
    ScaleWidth      =   12765
-   StartUpPosition =   3  'Windows Default
    Begin VB.PictureBox Picture1 
       Height          =   10305
       Left            =   0
@@ -399,7 +398,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub Command1_Click()
-    CommonDialog1.Filter = "Apps (*.txt|*.txt|All files (*.*)|*.*"
+    CommonDialog1.Filter = "Image (*.jpg|*.jpg|All files (*.*)|*.*"
     CommonDialog1.DefaultExt = "jpeg"
     CommonDialog1.DialogTitle = "Select File"
     CommonDialog1.ShowOpen

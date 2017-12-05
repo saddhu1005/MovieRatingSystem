@@ -5,15 +5,14 @@ Begin VB.Form Form9
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Delete Movie"
    ClientHeight    =   9675
-   ClientLeft      =   45
-   ClientTop       =   390
+   ClientLeft      =   4815
+   ClientTop       =   630
    ClientWidth     =   10440
    LinkTopic       =   "Form9"
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   9675
    ScaleWidth      =   10440
-   StartUpPosition =   3  'Windows Default
    Begin VB.PictureBox Picture1 
       Height          =   9705
       Left            =   0

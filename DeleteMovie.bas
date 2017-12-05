@@ -24,7 +24,7 @@ Private Sub DeleteFromMovieRatings(movie_name As String)
     db_path = App.Path + "\db\MovieRatingSystem.mdb"
     Set cn = New ADODB.Connection
         cn.Open "PROVIDER=Microsoft.Jet.OLEDB.4.0; Data Source=" & db_path
-    query = "ALTER TABLE MovieRatings  DROP [" & movie_name & "];"
+    query = "ALTER TABLE MovieRatings  DROP COLUMN [" & movie_name & "];"
     cn.Execute (query)
     cn.Close
 End Sub
@@ -32,7 +32,7 @@ Private Sub DeleteFromMovieComments(movie_name As String)
     Dim db As Database
     Dim query As String
     Set db = OpenDatabase(App.Path + "/db/MovieRatingSystem.mdb")
-    query = "ALTER TABLE MovieComments  DROP [" & movie_name & "];"
+    query = "ALTER TABLE MovieComments  DROP COLUMN [" & movie_name & "];"
     db.Execute (query)
     db.Close
 End Sub

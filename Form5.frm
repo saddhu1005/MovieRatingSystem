@@ -3,8 +3,8 @@ Begin VB.Form Form5
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Movie Details"
    ClientHeight    =   10275
-   ClientLeft      =   6330
-   ClientTop       =   1725
+   ClientLeft      =   3855
+   ClientTop       =   390
    ClientWidth     =   12315
    LinkTopic       =   "Form5"
    MaxButton       =   0   'False

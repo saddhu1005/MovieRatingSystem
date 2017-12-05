@@ -3,8 +3,8 @@ Begin VB.Form Form6
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Rating and Reviews"
    ClientHeight    =   10275
-   ClientLeft      =   5760
-   ClientTop       =   1530
+   ClientLeft      =   4575
+   ClientTop       =   390
    ClientWidth     =   12315
    LinkTopic       =   "Form5"
    MaxButton       =   0   'False

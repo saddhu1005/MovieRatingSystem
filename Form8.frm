@@ -4,8 +4,8 @@ Begin VB.Form Form8
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Admin Panel"
    ClientHeight    =   6795
-   ClientLeft      =   7095
-   ClientTop       =   2865
+   ClientLeft      =   4575
+   ClientTop       =   2070
    ClientWidth     =   10695
    FillColor       =   &H00FFFFFF&
    FillStyle       =   4  'Upward Diagonal
@@ -14,6 +14,27 @@ Begin VB.Form Form8
    MinButton       =   0   'False
    ScaleHeight     =   6795
    ScaleWidth      =   10695
+   Begin VB.CommandButton Command4 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Exit"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   11.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   615
+      Left            =   4920
+      MaskColor       =   &H00FFFFFF&
+      Style           =   1  'Graphical
+      TabIndex        =   6
+      Top             =   5760
+      Width           =   4995
+   End
    Begin VB.CommandButton Command3 
       Appearance      =   0  'Flat
       BackColor       =   &H00E0E0E0&
@@ -139,6 +160,21 @@ End Sub
 
 Private Sub Command3_Click()
     Form10.Show
+End Sub
+
+Private Sub Command4_Click()
+Unload Form1
+Unload Form2
+Unload Form3
+Unload Form4
+Unload Form5
+Unload Form6
+Unload Me
+Unload frmSplash
+Unload Form7
+Unload Form8
+Unload Form9
+Unload Form10
 End Sub
 
 Private Sub Form_Load()

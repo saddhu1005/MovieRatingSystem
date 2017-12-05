@@ -28,6 +28,7 @@ Module=MovieStatus; MovieStatus.bas
 Form=Form8.frm
 Startup="frmSplash"
 HelpFile=""
+ExeName32="Project1.exe"
 Command32=""
 Name="Project1"
 HelpContextID="0"

@@ -3,8 +3,8 @@ Begin VB.Form Form4
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Movie Rating System"
    ClientHeight    =   10215
-   ClientLeft      =   3090
-   ClientTop       =   1335
+   ClientLeft      =   1005
+   ClientTop       =   690
    ClientWidth     =   17580
    LinkTopic       =   "Form4"
    LockControls    =   -1  'True
@@ -812,6 +812,25 @@ Begin VB.Form Form4
          Width           =   1965
       End
    End
+   Begin VB.Menu File 
+      Caption         =   "File"
+      Begin VB.Menu Logout 
+         Caption         =   "Log Out"
+      End
+      Begin VB.Menu Exit 
+         Caption         =   "Exit"
+      End
+   End
+   Begin VB.Menu SortMovies 
+      Caption         =   "Sort Movies"
+      Begin VB.Menu CurrentlyRunning 
+         Caption         =   "Currently Running"
+         Checked         =   -1  'True
+      End
+      Begin VB.Menu Ratings 
+         Caption         =   "Ratings"
+      End
+   End
 End
 Attribute VB_Name = "Form4"
 Attribute VB_GlobalNameSpace = False
@@ -846,6 +865,22 @@ Private Sub CurrentlyRunning_Click()
     CurrentlyRunning.Checked = True
     Ratings.Checked = False
     Sort_Current
+End Sub
+
+Private Sub Exit_Click()
+Unload Form1
+Unload Form2
+Unload Form3
+Unload Form4
+Unload Form5
+Unload Form6
+Unload Me
+Unload frmSplash
+Unload Form7
+Unload Form8
+Unload Form9
+Unload Form10
+
 End Sub
 
 Private Sub Form_Load()
@@ -901,6 +936,13 @@ End Sub
 
 Private Sub HScroll1_Change()
     HScrollChange
+End Sub
+
+Private Sub Logout_Click()
+Unload Form4
+MsgBox "Logged Out Successfully.,vbokonly,LogOut"
+Load Form1
+Form1.Show
 End Sub
 
 Private Sub Picture1_Click()
@@ -966,6 +1008,7 @@ End Sub
 Private Sub Ratings_Click()
     Ratings.Checked = True
     CurrentlyRunning.Checked = False
+    sort_rating
 End Sub
 
 Private Sub Text1_Change()

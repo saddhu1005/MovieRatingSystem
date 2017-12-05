@@ -4,8 +4,8 @@ Begin VB.Form Form3
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Login"
    ClientHeight    =   6795
-   ClientLeft      =   7095
-   ClientTop       =   2865
+   ClientLeft      =   4335
+   ClientTop       =   1830
    ClientWidth     =   10695
    FillColor       =   &H00FFFFFF&
    FillStyle       =   4  'Upward Diagonal
